@@ -2,11 +2,14 @@
 
 
 body {
-
+/*
     background: #0f0c29;  
     background: -webkit-linear-gradient(to left, #24243e, #23204a, #0f0c29); 
     background: linear-gradient(to left, #24243e, #23204a, #0f0c29); 
     color: #f8fafc;
-   /* background-color: #0f172a;*/
+    background-color: #0f172a;*/
 
 }
+html {
+    scroll-behavior: smooth;
+  }

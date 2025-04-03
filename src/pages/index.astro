@@ -1,11 +1,27 @@
 ---
+import SectionContainer from '../components/SectionContainer.astro';
 import Layout from '../layouts/Layout.astro';
+import TitleSection from '../components/TitleSection.astro';
+
+import Projects from '../components/Projects.astro';
+import Hero from '../components/Hero.astro';
+
 import "../styles/global.css";
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout title="Mi Portfolio">
-	
+        
+        <SectionContainer class="py-8 md:py-16">
+            <Hero>
+            </slot>
+          </Hero>
+        </SectionContainer>
+        <SectionContainer id="proyectos" class="-mt-8">
+            <TitleSection title="Proyectos" subtitle="Algunos trabajos que muestran lo que sé hacer"/>
+            <Projects />
+          </SectionContainer>
+    
+
+
 </Layout>
